@@ -18,5 +18,6 @@ class String
     sentence_array = self.split(/\w+[.?!]/)
     sentence_array = sentence_array.delete_if {|sentence| sentence == "." || sentence == "!" || sentence == "?"}
     sentence_array.length
+    binding.pry
   end
 end
